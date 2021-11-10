@@ -19,9 +19,9 @@ BOT_IS_UP_TO_DATE = "**The 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧** is up-to-date sur.
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 ..."
+    "𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝙻𝚢𝚗𝚡𝙱𝚘𝚝 ..."
 )
-NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "` 𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃...`"
+NEW_UP_DATE_FOUND = "New update found for {branch_name}\n" "` 𝚄𝙿𝙳𝙰𝚃𝙸𝙽𝙶 𝚈𝙾𝚄𝚁 𝙻𝚢𝚗𝚡𝙱𝚘𝚝...`"
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
@@ -137,7 +137,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Updated your 𝗥𝗘𝗕𝗘𝗟𝗕𝗢𝗧 successfully sur!!!\nNow type `.ping` after 5 mins to check if I'm on🚶😏"
+        "Updated your 𝙻𝚢𝚗𝚡𝙱𝚘𝚝 successfully sur!!!\nNow type `.ping` after 5 mins to check if I'm on🚶😏"
     )
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
