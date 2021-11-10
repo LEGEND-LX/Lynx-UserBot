@@ -82,7 +82,7 @@ async def stats(
     response += f"┣ 🔸 𝙸𝚃 𝚃𝙾𝙾𝙺: {stop_time:.02f}𝚂 \n"
     response += f"┗━━━━━━✧❅✦❅✧━━━━━━\n\n"
     response += (
-        f"📌 𝙵𝚛𝚘𝚖 𝚃𝚑𝚎 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝙾𝚏 :- [𝐑𝐄𝐁𝐄𝐋𝐁𝐎𝐓](https://t.me/REBELBOT_SUPPORT)"
+        f"📌 𝙵𝚛𝚘𝚖 𝚃𝚑𝚎 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝙾𝚏 :- [𝐋𝐲𝐧𝐱𝐁𝐨𝐭](https://t.me/LynxBot_Chat)"
     )
     await hell.edit(response)
 
