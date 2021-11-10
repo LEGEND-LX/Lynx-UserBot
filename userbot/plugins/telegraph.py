@@ -23,7 +23,7 @@ async def _(event):
     if event.fwd_from:
         return
     if Config.PLUGIN_CHANNEL is None:
-        await edit_or_reply(event, "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work\n\nGo to [REBELBOT Chat Group](t.me/REBELBOT_SUPPORT) for assistance"
+        await edit_or_reply(event, "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work\n\nGo to [LynxBot Chat Group](t.me/LynxBot_chat) for assistance"
         )
         return
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
@@ -91,7 +91,7 @@ async def _(event):
             ms = (end - start).seconds
             himanshu = f"https://telegra.ph/{response['path']}"
             await edit_or_reply(event, 
-                  f"✓ **Pasted to** [telegraph]({himanshu}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :- **[{REBEL_NAME}](tg://user?id={h1m4n5hu0p})", link_preview=True)
+                  f"✓ **Pasted to** [telegraph]({himanshu}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :- **@lynxbot_chat", link_preview=True)
     else:
         await edit_or_reply(event, 
             "Reply to a message to get a permanent telegra.ph link."
