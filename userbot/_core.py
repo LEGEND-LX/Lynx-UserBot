@@ -23,7 +23,7 @@ async def send(event):
     message_id = event.message.id
     thumb = REBEL_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {REBEL}\n\n⚡ **[LEGENDARY AF REBELBOT](t.me/REBELBOT_SUPPORT)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {REBEL}\n\n⚡ **[𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝙵 𝙻𝚢𝚗𝚡𝙱𝚘𝚝](t.me/LynxBot_chat)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -71,7 +71,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {REBEL}\n\n{string}\n\n        ⚡ **[LEGENDARY AF REBELBOT](t.me/REBELBOT_SUPPORT)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {REBEL}\n\n{string}\n\n        ⚡ **[𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝙵 𝙻𝚢𝚗𝚡𝙱𝚘𝚝](t.me/LynxBot_chat)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)
