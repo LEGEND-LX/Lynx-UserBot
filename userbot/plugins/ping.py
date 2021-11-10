@@ -5,7 +5,7 @@ from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from ..cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 h1m4n5hu0p = borg.uid
 REBEL_IMG = Config.ALIVE_PIC
 
@@ -70,7 +70,7 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     if REBEL_IMG:
-        REBEL_caption = f"╰•★★  ℘ơŋɠ ★★•╯\n\n    ⚘  `{ms}`\n    ⚘  Oɯɳҽɾ [{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
+        REBEL_caption = f"╰•★★  [℘ơŋɠ](https://telegra.ph/file/4abe4306eb84f561d67d0.jpg) ★★•╯\n\n    ⚘  `{ms}`\n    ⚘  Oɯɳҽɾ [{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
         await event.client.send_file(
             event.chat_id, REBEL_IMG, caption=REBEL_caption
         )
