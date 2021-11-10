@@ -13,9 +13,9 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "REBEL User"
+DEFAULTUSER = ALIVE_NAME or "Lynx User"
 REBEL_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝕃𝕖𝕘𝕖𝕟𝕕𝕒𝕣𝕪_𝔸𝔽_ℝ𝔼𝔹𝔼𝕃𝔹𝕆𝕋"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝐋𝐞𝐠𝐞𝐧𝐝𝐚𝐫𝐲_𝐀𝐅_𝐋𝐲𝐧𝐱𝐁𝐨𝐭"
 
 USERID = bot.uid
 
@@ -68,6 +68,7 @@ async def amireallyalive(alive):
         REBEL_caption += f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :**`{REBELversion}`\n"
         REBEL_caption += f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴   :** `{uptime}\n`"
         REBEL_caption += f"**❥︎ 𝙾𝚆𝙽𝙴𝚁    :** {mention}\n"
+        REBEL_caption += f"**❥︎ 𝙳𝚎𝚟      :** [Mr.Developer](https://t.me/Mr_developer_xd)\n"
         await alive.client.send_file(
             alive.chat_id, REBEL_IMG, caption=REBEL_caption, reply_to=reply_to_id
         )
@@ -82,4 +83,5 @@ async def amireallyalive(alive):
             f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :** `{REBELversion}`\n"
             f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴      :** `{uptime}\n`"
             f"**❥︎ 𝙾𝚆𝙽𝙴𝚁        :** {mention}\n",
+            f"**❥︎ 𝙳𝚎𝚟      :** [Mr.Developer](https://t.me/Mr_developer_xd)\n"
         )
