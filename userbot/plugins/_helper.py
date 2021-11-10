@@ -15,7 +15,7 @@ async def yardim(event):
     tgbotusername = Config.TG_BOT_USER_NAME_BF_HER
     input_str = event.pattern_match.group(1)
     if tgbotusername is not None or REBEL_input == "text":
-        results = await event.client.inline_query(tgbotusername, "@REBELBOT_SUPPORT")
+        results = await event.client.inline_query(tgbotusername, "@LynxBot_Chat")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
         )
@@ -40,7 +40,7 @@ async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
         string = (
-            "Total {count} commands found in {plugincount} sudo plugins of REBELBOT\n\n"
+            "Total {count} commands found in {plugincount} sudo plugins of LynxBot\n\n"
         )
         REBELcount = 0
         plugincount = 0
@@ -63,7 +63,7 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the REBELBOT are [here]({url})"
+            reply_text = f"All commands of the LynxBot are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(
