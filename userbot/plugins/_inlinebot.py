@@ -1,21 +1,4 @@
-#    Copyright (C) @SupRemE_AnanD 2021-2022
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
-#
-#    This Inline Helper Code is solely owned by @SupRemE_AnanD
-#    You Should Not Copy This Code Without Proper Permission.
 
-# Help Pic feature added by 𝐌𝐀𝐅𝐈𝐀 𝐎𝐖𝐍𝐄𝐑 = @H1M4N5HU0P
 
 from math import ceil
 from re import compile
@@ -78,12 +61,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@REBELBOT_SUPPORT":
+        if event.query.user_id == bot.uid and query == "@LynxBot_Chat":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running REBELBOT**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running LynxBot**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -97,21 +80,21 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         elif event.text=='':
             result = builder.article(
-                "@REBELBOT_SUPPORT",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [REBELBOT.](https://t.me/REBELBOT_SUPPORT)\nYou can know more about me from the links given below 👇**""",
+                "@LynxBot_chat",
+                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [LynxBot.](https://t.me/LynxBot_Chat)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/REBELBOT_SUPPORT"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Lynx_userbot"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/REBEL_BOT_CHATING"
+                            "⚡ GROUP ⚡", "https://t.me/Lynxbot_chat"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "🔰 REPO 🔰", "https://github.com/REBEL75/REBELBOTOP"),
+                            "🔰 REPO 🔰", "https://github.com/Itz-UNKOWN-xd/Lynx-Bot"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", ""
+                            "🔰 TUTORIAL 🔰", "https://t.me/Lynxbot_chat"
                     )
                     ],
                 ],
@@ -123,14 +106,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN LynxBot AND USE. © LynxBot ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF REBELBOT[⚡🔥]({REBEL_help_pic})[.](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF LynxBot[⚡🔥]({REBEL_help_pic})[.](https://t.me/LynxBot_Chat) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -139,10 +122,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              f"⚜️REBELBOT Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**[⚡🔥]({REBEL_help_pic})", 5, link_preview=True
+              f"⚜️LynxBot Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© LynxBot ™](t.me/LynxBot_chat)**[⚡🔥]({REBEL_help_pic})", 5, link_preview=True
             )
         else:
-            REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™"
+            REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © LynxBot ™"
             await event.answer(REBEL_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -151,7 +134,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN LynxBot AND USE. © LynxBot ™",
                 cache_time=0,
                 alert=True,
             )
@@ -184,7 +167,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN REBELBOT AND USE. © REBELBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN LynxBot AND USE. © LynxBot ™",
                 cache_time=0,
                 alert=True,
             )
