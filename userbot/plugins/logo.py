@@ -9,7 +9,7 @@ from . import *
 
 
 PICS_STR = []
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lynx User"
 aura = borg.uid
 
 @bot.on(admin_cmd(pattern="logo (.*)"))
@@ -56,7 +56,7 @@ async def lg1(REBEL):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "REBELBot.png"
+    file_name = "Lynx.png"
     img.save(file_name, "png")
     await bot.send_file(
         REBEL.chat_id,
