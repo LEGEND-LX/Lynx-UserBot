@@ -40,7 +40,7 @@ pm_caption += f"┣•➳➠ `𝚅𝚎𝚛𝚜𝚒𝚘𝚗:` `{REBELversion}`\n"
 pm_caption += f"┣•➳➠ `𝚂𝚞𝚍𝚘:` `{sudou}`\n"
 pm_caption += f"┣•➳➠ `𝙲𝚑𝚊𝚗𝚗𝚎𝚕:` [𝙹𝙾𝙸𝙽](https://t.me/Lynx_UserBot)\n"
 pm_caption += f"┣•➳➠ `𝙲𝚛𝚎𝚊𝚝𝚘𝚛:` [𝙻𝚢𝚗𝚡](https://t.me/Mr_developer_xd)\n"
-pm_caption += f"┣•➳➠ `𝙼𝚛 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛:` [𝙽𝙸𝚂𝙷𝚄](https://t.me/Mr_developer_xd)\n"
+pm_caption += f"┣•➳➠ `𝙼𝚛 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛:` [𝙳𝚎𝚟](https://t.me/Mr_developer_xd)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━\n"
 pm_caption += " [🔥𝐑𝐄𝐏𝐎🔥](https://github.com/Itz-UNKOWN-xd/Lynx-Bot) 🔹 [📜𝐋𝐢𝐜𝐞𝐧𝐬𝐞📜](https://github.com/Itz-UNKOWN-xd/Lynx-UserBot/blob/main/LICENSE)"
 
