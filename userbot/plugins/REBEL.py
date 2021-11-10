@@ -65,7 +65,7 @@ async def amireallyalive(alive):
         REBEL_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
         REBEL_caption += f"__**𝙱𝙾𝚃 𝚂𝚃𝙰𝚃𝚄𝚂**__\n\n"
         REBEL_caption += f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙼 :** `1.15.0`\n"
-        REBEL_caption += f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :**`{REBELversion}`\n"
+        REBEL_caption += f"**❥︎ 𝙻𝚢𝚗𝚡𝙱𝚘𝚝 :**`{REBELversion}`\n"
         REBEL_caption += f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴   :** `{uptime}\n`"
         REBEL_caption += f"**❥︎ 𝙾𝚆𝙽𝙴𝚁    :** {mention}\n"
         REBEL_caption += f"**❥︎ 𝙳𝚎𝚟      :** [Mr.Developer](https://t.me/Mr_developer_xd)\n"
@@ -80,7 +80,7 @@ async def amireallyalive(alive):
             f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
             f"__**𝙱𝙾𝚃 𝚂𝚃𝙰𝚃𝚄𝚂**__\n\n"
             f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 :** `1.15.0`\n"
-            f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :** `{REBELversion}`\n"
+            f"**❥︎ 𝙻𝚢𝚗𝚡𝙱𝚘𝚝 :** `{REBELversion}`\n"
             f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴      :** `{uptime}\n`"
             f"**❥︎ 𝙾𝚆𝙽𝙴𝚁        :** {mention}\n",
             f"**❥︎ 𝙳𝚎𝚟      :** [Mr.Developer](https://t.me/Mr_developer_xd)\n"
