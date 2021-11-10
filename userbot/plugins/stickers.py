@@ -99,11 +99,11 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_rebelbot_{pack}"
+        packname = f"HB_{user.username}_lynxbot_{pack}"
         packnick = (
             f"{rebelbot} Vol.{pack}"
             if rebelbot
-            else f"@{user.username}'s rebelbot Vol.{pack}"
+            else f"@{user.username}'s lynxbot Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -139,7 +139,7 @@ async def kang(args):
                     packnick = (
                         f"{rebelbot} Vol.{pack}"
                         if rebelbot
-                        else f"@{user.username}'s rebelbot Vol.{pack}"
+                        else f"@{user.username}'s lynxbot Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "
