@@ -14,7 +14,7 @@ async def reply_id(event):
 
 
 DEFAULTUSER = ALIVE_NAME or "Lynx User"
-REBEL_IMG = Config.ALIVE_PIC
+REBEL_IMG = "https://te.legra.ph/file/ea7e4fa36eab1a2d62fd8.jpg"
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝐋𝐞𝐠𝐞𝐧𝐝𝐚𝐫𝐲_𝐀𝐅_𝐋𝐲𝐧𝐱𝐁𝐨𝐭"
 
 USERID = bot.uid
