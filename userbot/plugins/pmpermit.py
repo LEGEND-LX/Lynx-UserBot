@@ -41,7 +41,7 @@ USER_BOT_NO_WARN = (
 
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @borg.on(admin_cmd(pattern="allow|.a ?(.*)"))
+    @borg.on(admin_cmd(pattern="allow|.hi ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -143,7 +143,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow ?(.*)"))
+    @borg.on(admin_cmd(pattern="disallow|.bye ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
