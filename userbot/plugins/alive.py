@@ -44,9 +44,9 @@ pm_caption += f"┣•➳➠ `𝙼𝚛 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛:` [�
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━\n"
 pm_caption += " [🔥𝐑𝐄𝐏𝐎🔥](https://github.com/Itz-UNKOWN-xd/Lynx-Bot) 🔹 [📜𝐋𝐢𝐜𝐞𝐧𝐬𝐞📜](https://github.com/Itz-UNKOWN-xd/Lynx-UserBot/blob/main/LICENSE)"
 
-# @command(outgoing=True, pattern="^.alive$")
-@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
+# @command(outgoing=True, pattern="^.lynx$")
+@bot.on(admin_cmd(outgoing=True, pattern="lynx$"))
+@bot.on(sudo_cmd(pattern="lynx$", allow_sudo=True))
 async def amireallyalive(alive):
     await alive.get_chat()   
     await alive.delete()
@@ -65,13 +65,13 @@ async def amireallyalive(alive):
     ok4 = await borg.edit_message(alive.chat_id, ok3, file=file3)
     
 
-    """ For .alive command, check if the bot is running.  """
+    """ For .lynx command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, caption=pm_caption)
     await alive.delete()
     
     
-CmdHelp("alive").add_command(
-  "alive", None, "To check am i alive"
+CmdHelp("lynx").add_command(
+  "lynx", None, "To check am i alive"
 ).add_command(
-  "lynx", None, "To check am i alive with your favorite alive pic"
+  "ly", None, "To check am i alive with your favorite alive pic"
 ).add()
