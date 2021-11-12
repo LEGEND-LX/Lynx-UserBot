@@ -41,7 +41,6 @@ USER_BOT_NO_WARN = (
 
 if Var.PRIVATE_GROUP_ID is not None:
 
-
     @borg.on(admin_cmd(pattern="allow|.a ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
@@ -145,7 +144,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()
 
     @borg.on(admin_cmd(pattern="disallow ?(.*)"))
-       async def approve_p_m(event):
+    async def approve_p_m(event):
         if event.fwd_from:
             return
         replied_user = await event.client(GetFullUserRequest(event.chat_id))
